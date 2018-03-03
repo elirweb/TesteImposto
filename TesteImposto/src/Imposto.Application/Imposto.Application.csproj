@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A9EF0387-4334-4474-B4E3-9C08CD86C1B9}</ProjectGuid>
+    <ProjectGuid>{8B833D6A-764D-497C-BA2A-173258058740}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Imposto.Core</RootNamespace>
-    <AssemblyName>Imposto.Core</AssemblyName>
+    <RootNamespace>Imposto.Application</RootNamespace>
+    <AssemblyName>Imposto.Application</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,15 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entidades\Desconto.cs" />
-    <Compile Include="Entidades\NotaFiscaiItem.cs" />
-    <Compile Include="Entidades\NotaFiscal.cs" />
-    <Compile Include="Entidades\Pedido.cs" />
-    <Compile Include="Entidades\PedidoItem.cs" />
-    <Compile Include="Interfaces\Repositorios\INotaFiscal.cs" />
+    <Compile Include="AppActions\NotaFiscalAppAction.cs" />
+    <Compile Include="Interfaces\INotaFiscalAppAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Imposto.Core\Imposto.Core.csproj">
+      <Project>{a9ef0387-4334-4474-b4e3-9c08cd86c1b9}</Project>
+      <Name>Imposto.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Imposto.Data\Imposto.Data.csproj">
+      <Project>{c6a34d79-00e2-4b66-b8cc-17ff4eb6d2c2}</Project>
+      <Name>Imposto.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

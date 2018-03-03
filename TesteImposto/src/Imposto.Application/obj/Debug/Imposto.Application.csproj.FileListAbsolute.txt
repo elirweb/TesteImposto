@@ -1,0 +1,9 @@
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\bin\Debug\Imposto.Application.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\bin\Debug\Imposto.Application.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\bin\Debug\Imposto.Core.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\bin\Debug\Imposto.Data.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\bin\Debug\Imposto.Core.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\bin\Debug\Imposto.Data.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\obj\Debug\Imposto.Application.csprojResolveAssemblyReference.cache
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\obj\Debug\Imposto.Application.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\obj\Debug\Imposto.Application.pdb

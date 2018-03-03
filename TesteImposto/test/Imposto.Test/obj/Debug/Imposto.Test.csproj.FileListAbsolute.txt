@@ -1,0 +1,7 @@
+D:\projetos\TesteImposto\TesteImposto\test\Imposto.Test\bin\Debug\Imposto.Test.dll
+D:\projetos\TesteImposto\TesteImposto\test\Imposto.Test\bin\Debug\Imposto.Test.pdb
+D:\projetos\TesteImposto\TesteImposto\test\Imposto.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\projetos\TesteImposto\TesteImposto\test\Imposto.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\projetos\TesteImposto\TesteImposto\test\Imposto.Test\obj\Debug\Imposto.Test.csprojResolveAssemblyReference.cache
+D:\projetos\TesteImposto\TesteImposto\test\Imposto.Test\obj\Debug\Imposto.Test.dll
+D:\projetos\TesteImposto\TesteImposto\test\Imposto.Test\obj\Debug\Imposto.Test.pdb

@@ -1,0 +1,13 @@
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Imposto.Infra.IoC.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Imposto.Infra.IoC.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Imposto.Application.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Imposto.Core.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Imposto.Data.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\SimpleInjector.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Imposto.Application.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Imposto.Core.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Imposto.Data.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\SimpleInjector.xml
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\obj\Debug\Imposto.Infra.IoC.csprojResolveAssemblyReference.cache
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\obj\Debug\Imposto.Infra.IoC.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\obj\Debug\Imposto.Infra.IoC.pdb

@@ -1,0 +1,5 @@
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Core\bin\Debug\Imposto.Core.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Core\bin\Debug\Imposto.Core.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Core\obj\Debug\Imposto.Core.csprojResolveAssemblyReference.cache
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Core\obj\Debug\Imposto.Core.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Core\obj\Debug\Imposto.Core.pdb

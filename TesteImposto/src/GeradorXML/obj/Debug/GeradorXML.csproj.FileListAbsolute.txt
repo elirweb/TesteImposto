@@ -1,0 +1,7 @@
+D:\projetos\TesteImposto\TesteImposto\src\GeradorXML\bin\Debug\GeradorXML.dll
+D:\projetos\TesteImposto\TesteImposto\src\GeradorXML\bin\Debug\GeradorXML.pdb
+D:\projetos\TesteImposto\TesteImposto\src\GeradorXML\bin\Debug\Imposto.Core.dll
+D:\projetos\TesteImposto\TesteImposto\src\GeradorXML\bin\Debug\Imposto.Core.pdb
+D:\projetos\TesteImposto\TesteImposto\src\GeradorXML\obj\Debug\GeradorXML.csprojResolveAssemblyReference.cache
+D:\projetos\TesteImposto\TesteImposto\src\GeradorXML\obj\Debug\GeradorXML.dll
+D:\projetos\TesteImposto\TesteImposto\src\GeradorXML\obj\Debug\GeradorXML.pdb
