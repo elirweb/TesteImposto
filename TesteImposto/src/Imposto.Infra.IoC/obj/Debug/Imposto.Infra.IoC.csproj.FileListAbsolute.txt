@@ -11,3 +11,5 @@ D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\SimpleInje
 D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\obj\Debug\Imposto.Infra.IoC.csprojResolveAssemblyReference.cache
 D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\obj\Debug\Imposto.Infra.IoC.dll
 D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\obj\Debug\Imposto.Infra.IoC.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Dapper.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Infra.IoC\bin\Debug\Dapper.xml

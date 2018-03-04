@@ -74,18 +74,15 @@ namespace TesteImposto.UI
             var notafiscal = nota.GerarNotaFiscal(pedido);
 
 
-            /*
-            if (gerador.Exportar(notafiscal, System.Configuration.ConfigurationManager.AppSettings["diretorioxml"]))
+            
+            if (gerador.Serializar(notafiscal, System.Configuration.ConfigurationManager.AppSettings["diretorioxml"]))
             {
-                NotaFiscalRepository rep = new NotaFiscalRepository();
-                rep.GravarInformaçãoNoBanco(notafiscal);
+                nota.Adicionar(notafiscal);
                 MessageBox.Show("Operação efetuada com sucesso");
             }
             else
-            {
                 MessageBox.Show("Não foi possivel realizar a persistência de dados, favor entrar em contato com o Administrador");
-            }*/
-        }
+         }
 
         private void btnEditarNF_Click(object sender, EventArgs e)
         {

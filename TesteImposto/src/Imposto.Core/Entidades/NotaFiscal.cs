@@ -40,7 +40,7 @@ namespace Imposto.Core.Entidades
                 if ((this.EstadoOrigem == "SP") && (this.EstadoDestino == "RJ"))
                 {
                     notaFiscalItem.Cfop = "6.000";
-                    notaFiscalItem.desconto = new Desconto(0.10);
+                    notaFiscalItem.desconto = 0.10;
                 }
                 else if ((this.EstadoOrigem == "SP") && (this.EstadoDestino == "PE"))
                 {
@@ -49,7 +49,7 @@ namespace Imposto.Core.Entidades
                 else if ((this.EstadoOrigem == "SP") && (this.EstadoDestino == "MG"))
                 {
                     notaFiscalItem.Cfop = "6.002";
-                    notaFiscalItem.desconto = new Desconto(0.10);
+                    notaFiscalItem.desconto = 0.10;
                 }
                 else if ((this.EstadoOrigem == "SP") && (this.EstadoDestino == "PB"))
                 {
@@ -86,7 +86,7 @@ namespace Imposto.Core.Entidades
                 else if ((this.EstadoOrigem == "MG") && (this.EstadoDestino == "RJ"))
                 {
                     notaFiscalItem.Cfop = "6.000";
-                    notaFiscalItem.desconto = new Desconto(0.10);
+                    notaFiscalItem.desconto = 0.10;
                 }
                 else if ((this.EstadoOrigem == "MG") && (this.EstadoDestino == "PE"))
                 {

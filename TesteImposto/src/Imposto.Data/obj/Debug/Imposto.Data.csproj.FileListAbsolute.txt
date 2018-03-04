@@ -5,3 +5,10 @@ D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\bin\Debug\Imposto.Core.pd
 D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\obj\Debug\Imposto.Data.csprojResolveAssemblyReference.cache
 D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\obj\Debug\Imposto.Data.dll
 D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\obj\Debug\Imposto.Data.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\bin\Debug\Imposto.Data.dll.config
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\bin\Debug\Dapper.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\bin\Debug\EntityFramework.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\bin\Debug\Dapper.xml
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\bin\Debug\EntityFramework.xml
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Data\bin\Debug\EntityFramework.SqlServer.xml

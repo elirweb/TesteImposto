@@ -1,1 +1,25 @@
-﻿
+<?xml version="1.0"?>
+<NotaFiscal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <NumeroNotaFiscal>99999</NumeroNotaFiscal>
+  <Serie>1698664171</Serie>
+  <NomeCliente>elir</NomeCliente>
+  <EstadoDestino>SP</EstadoDestino>
+  <EstadoOrigem>RJ</EstadoOrigem>
+  <ItensDaNotaFiscal>
+    <NotaFiscalItem>
+      <Id>0</Id>
+      <IdNotaFiscal>0</IdNotaFiscal>
+      <TipoIcms>60</TipoIcms>
+      <BaseIcms>100</BaseIcms>
+      <BaseIPI>100</BaseIPI>
+      <AliquotaIcms>0.18</AliquotaIcms>
+      <AliquotaIPI>0</AliquotaIPI>
+      <ValorIcms>18</ValorIcms>
+      <ValorIPI>0</ValorIPI>
+      <NomeProduto>teclado</NomeProduto>
+      <CodigoProduto>40</CodigoProduto>
+      <desconto>0</desconto>
+    </NotaFiscalItem>
+  </ItensDaNotaFiscal>
+</NotaFiscal>

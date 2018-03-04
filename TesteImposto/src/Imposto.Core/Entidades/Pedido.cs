@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Imposto.Core.Entidades
 {
+    [Serializable]
     public class Pedido
     {
         public string EstadoDestino { get; set; }

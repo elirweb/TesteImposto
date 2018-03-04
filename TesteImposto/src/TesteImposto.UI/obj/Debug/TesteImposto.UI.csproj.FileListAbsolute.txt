@@ -16,3 +16,7 @@ D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\bin\Debug\Imposto.Data
 D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\obj\Debug\TesteImposto.UI.csprojResolveAssemblyReference.cache
 D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\obj\Debug\TesteImposto.UI.exe
 D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\obj\Debug\TesteImposto.UI.pdb
+D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\obj\Debug\TesteImposto.UI.FormImposto.resources
+D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\obj\Debug\TesteImposto.UI.csproj.GenerateResource.Cache
+D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\bin\Debug\Dapper.dll
+D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\bin\Debug\Dapper.xml

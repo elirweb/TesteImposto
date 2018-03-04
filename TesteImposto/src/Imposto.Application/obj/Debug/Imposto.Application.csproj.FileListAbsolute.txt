@@ -7,3 +7,5 @@ D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\bin\Debug\Imposto.
 D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\obj\Debug\Imposto.Application.csprojResolveAssemblyReference.cache
 D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\obj\Debug\Imposto.Application.dll
 D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\obj\Debug\Imposto.Application.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\bin\Debug\Dapper.dll
+D:\projetos\TesteImposto\TesteImposto\src\Imposto.Application\bin\Debug\Dapper.xml

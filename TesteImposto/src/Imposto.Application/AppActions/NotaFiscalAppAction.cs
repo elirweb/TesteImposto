@@ -20,7 +20,6 @@ namespace Imposto.Application.AppActions
         public void Adicionar(NotaFiscal pedido)
         {
             notafiscal.Adicionar(pedido);
-            throw new NotImplementedException();
         }
 
         public NotaFiscal GerarNotaFiscal(Pedido pedido)
@@ -28,8 +27,6 @@ namespace Imposto.Application.AppActions
             NotaFiscal notaFiscal = new NotaFiscal();
             notaFiscal.EmitirNotaFiscal(pedido);
             return notaFiscal;
-            // se der tudo certo chamar o adicionar 
-            throw new NotImplementedException();
-        }
+         }
     }
 }
