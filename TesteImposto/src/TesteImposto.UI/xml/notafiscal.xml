@@ -2,24 +2,25 @@
 <NotaFiscal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>0</Id>
   <NumeroNotaFiscal>99999</NumeroNotaFiscal>
-  <Serie>1698664171</Serie>
-  <NomeCliente>elir</NomeCliente>
-  <EstadoDestino>SP</EstadoDestino>
-  <EstadoOrigem>RJ</EstadoOrigem>
+  <Serie>1806784938</Serie>
+  <NomeCliente>Elir</NomeCliente>
+  <EstadoDestino>RJ</EstadoDestino>
+  <EstadoOrigem>SP</EstadoOrigem>
   <ItensDaNotaFiscal>
     <NotaFiscalItem>
       <Id>0</Id>
       <IdNotaFiscal>0</IdNotaFiscal>
+      <Cfop>6.000</Cfop>
       <TipoIcms>60</TipoIcms>
-      <BaseIcms>100</BaseIcms>
-      <BaseIPI>100</BaseIPI>
+      <BaseIcms>50</BaseIcms>
+      <BaseIPI>50</BaseIPI>
       <AliquotaIcms>0.18</AliquotaIcms>
       <AliquotaIPI>0</AliquotaIPI>
-      <ValorIcms>18</ValorIcms>
+      <ValorIcms>9</ValorIcms>
       <ValorIPI>0</ValorIPI>
-      <NomeProduto>teclado</NomeProduto>
-      <CodigoProduto>40</CodigoProduto>
-      <desconto>0</desconto>
+      <NomeProduto>mouse</NomeProduto>
+      <CodigoProduto>400</CodigoProduto>
+      <desconto>0.1</desconto>
     </NotaFiscalItem>
   </ItensDaNotaFiscal>
 </NotaFiscal>

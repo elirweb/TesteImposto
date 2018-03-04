@@ -38,7 +38,6 @@
             this.dataGridViewPedidos = new System.Windows.Forms.DataGridView();
             this.buttonGerarNotaFiscal = new System.Windows.Forms.Button();
             this.btnConsulta = new System.Windows.Forms.Button();
-            this.btnEditarNF = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidos)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +79,7 @@
             // txtEstadoOrigem
             // 
             this.txtEstadoOrigem.Location = new System.Drawing.Point(95, 31);
+            this.txtEstadoOrigem.MaxLength = 2;
             this.txtEstadoOrigem.Name = "txtEstadoOrigem";
             this.txtEstadoOrigem.Size = new System.Drawing.Size(939, 20);
             this.txtEstadoOrigem.TabIndex = 4;
@@ -87,6 +87,7 @@
             // txtEstadoDestino
             // 
             this.txtEstadoDestino.Location = new System.Drawing.Point(95, 53);
+            this.txtEstadoDestino.MaxLength = 2;
             this.txtEstadoDestino.Name = "txtEstadoDestino";
             this.txtEstadoDestino.Size = new System.Drawing.Size(939, 20);
             this.txtEstadoDestino.TabIndex = 5;
@@ -111,7 +112,7 @@
             // 
             // buttonGerarNotaFiscal
             // 
-            this.buttonGerarNotaFiscal.Location = new System.Drawing.Point(250, 442);
+            this.buttonGerarNotaFiscal.Location = new System.Drawing.Point(904, 442);
             this.buttonGerarNotaFiscal.Name = "buttonGerarNotaFiscal";
             this.buttonGerarNotaFiscal.Size = new System.Drawing.Size(127, 23);
             this.buttonGerarNotaFiscal.TabIndex = 8;
@@ -121,7 +122,7 @@
             // 
             // btnConsulta
             // 
-            this.btnConsulta.Location = new System.Drawing.Point(519, 442);
+            this.btnConsulta.Location = new System.Drawing.Point(778, 442);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(97, 23);
             this.btnConsulta.TabIndex = 9;
@@ -129,19 +130,9 @@
             this.btnConsulta.UseVisualStyleBackColor = true;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
-            // btnEditarNF
-            // 
-            this.btnEditarNF.Location = new System.Drawing.Point(394, 442);
-            this.btnEditarNF.Name = "btnEditarNF";
-            this.btnEditarNF.Size = new System.Drawing.Size(97, 23);
-            this.btnEditarNF.TabIndex = 10;
-            this.btnEditarNF.Text = "Editar Nota Fiscal";
-            this.btnEditarNF.UseVisualStyleBackColor = true;
-            this.btnEditarNF.Click += new System.EventHandler(this.btnEditarNF_Click);
-            // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(934, 442);
+            this.btnClose.Location = new System.Drawing.Point(630, 442);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(97, 23);
             this.btnClose.TabIndex = 11;
@@ -155,7 +146,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1043, 477);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnEditarNF);
             this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.buttonGerarNotaFiscal);
             this.Controls.Add(this.dataGridViewPedidos);
@@ -186,7 +176,6 @@
         private System.Windows.Forms.DataGridView dataGridViewPedidos;
         private System.Windows.Forms.Button buttonGerarNotaFiscal;
         private System.Windows.Forms.Button btnConsulta;
-        private System.Windows.Forms.Button btnEditarNF;
         private System.Windows.Forms.Button btnClose;
     }
 }

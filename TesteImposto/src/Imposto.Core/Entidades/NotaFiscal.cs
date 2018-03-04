@@ -32,8 +32,8 @@ namespace Imposto.Core.Entidades
 
             NotaFiscalItem notaFiscalItem = new NotaFiscalItem();
 
-            this.EstadoDestino = pedido.EstadoOrigem;
-            this.EstadoOrigem = pedido.EstadoDestino;
+            this.EstadoDestino = pedido.EstadoDestino;
+            this.EstadoOrigem = pedido.EstadoOrigem;
 
             foreach (PedidoItem itemPedido in pedido.ItensDoPedido)
             {

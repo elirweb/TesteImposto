@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 using Dapper;
 using Imposto.Core.Entidades;
 using Imposto.Core.Interfaces.Repositorios;
-using Imposto.Data.Conexao;
 
 namespace Imposto.Data.Repositorio
 {
@@ -66,7 +65,6 @@ namespace Imposto.Data.Repositorio
         public IEnumerable<NotaFiscalItem> Imposto()
         {
             var conn = new SqlConnection(bd);
-            var list = new List<NotaFiscalItem>();
             return conn.Query<NotaFiscalItem>("P_IMPOSTO", commandTimeout: 8000).AsParallel();
         }
 

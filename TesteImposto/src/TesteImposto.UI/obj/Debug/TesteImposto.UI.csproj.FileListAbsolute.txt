@@ -21,3 +21,5 @@ D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\obj\Debug\TesteImposto
 D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\bin\Debug\Dapper.dll
 D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\bin\Debug\Dapper.xml
 D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\obj\Debug\TesteImposto.UI.FormConsultaImposto.resources
+D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\bin\Debug\Validador.dll
+D:\projetos\TesteImposto\TesteImposto\src\TesteImposto.UI\bin\Debug\Validador.pdb

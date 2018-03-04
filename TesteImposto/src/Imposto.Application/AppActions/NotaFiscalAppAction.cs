@@ -24,9 +24,9 @@ namespace Imposto.Application.AppActions
 
         public NotaFiscal GerarNotaFiscal(Pedido pedido)
         {
-            NotaFiscal notaFiscal = new NotaFiscal();
-            notaFiscal.EmitirNotaFiscal(pedido);
-            return notaFiscal;
+            NotaFiscal validacaoNF = new NotaFiscal();
+            validacaoNF.EmitirNotaFiscal(pedido);
+            return validacaoNF;
          }
 
         public IEnumerable<NotaFiscalItem> Imposto()

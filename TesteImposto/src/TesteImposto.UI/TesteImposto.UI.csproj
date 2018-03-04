@@ -60,12 +60,6 @@
     <Compile Include="FormConsultaImposto.Designer.cs">
       <DependentUpon>FormConsultaImposto.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEditarNotaFiscal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormEditarNotaFiscal.Designer.cs">
-      <DependentUpon>FormEditarNotaFiscal.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormImposto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +89,10 @@
     <ProjectReference Include="..\Imposto.Infra.IoC\Imposto.Infra.IoC.csproj">
       <Project>{b94a5bc8-008d-4ac1-b621-813df494ea8c}</Project>
       <Name>Imposto.Infra.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validador\Validador.csproj">
+      <Project>{b62ed590-f238-4861-ac64-e380cb765b09}</Project>
+      <Name>Validador</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,5 @@
+D:\projetos\TesteImposto\TesteImposto\src\Validador\bin\Debug\Validador.dll
+D:\projetos\TesteImposto\TesteImposto\src\Validador\bin\Debug\Validador.pdb
+D:\projetos\TesteImposto\TesteImposto\src\Validador\obj\Debug\Validador.csprojResolveAssemblyReference.cache
+D:\projetos\TesteImposto\TesteImposto\src\Validador\obj\Debug\Validador.dll
+D:\projetos\TesteImposto\TesteImposto\src\Validador\obj\Debug\Validador.pdb

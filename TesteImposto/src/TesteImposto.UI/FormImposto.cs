@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using GeradorXML;
-using Imposto.Application.AppActions;
 using Imposto.Application.Interfaces;
 using Imposto.Core.Entidades;
 
@@ -53,41 +46,49 @@ namespace TesteImposto.UI
 
         private void buttonGerarNotaFiscal_Click(object sender, EventArgs e)
         {
-            pedido.EstadoOrigem = txtEstadoOrigem.Text;
-            pedido.EstadoDestino = txtEstadoDestino.Text;
-            pedido.NomeCliente = textBoxNomeCliente.Text;
-
-            DataTable table = (DataTable)dataGridViewPedidos.DataSource;
-
-            foreach (DataRow row in table.Rows)
+            if (txtEstadoOrigem.Text != string.Empty && txtEstadoDestino.Text != string.Empty &&
+                textBoxNomeCliente.Text != string.Empty && dataGridViewPedidos.RowCount > 0)
             {
-                pedido.ItensDoPedido.Add(
-                    new PedidoItem()
+                if (Validador.Distrito.VerificadorEstado(txtEstadoOrigem.Text) &&
+                    Validador.Distrito.VerificadorEstado(txtEstadoDestino.Text))
+                {
+                    pedido.EstadoOrigem = txtEstadoOrigem.Text;
+                    pedido.EstadoDestino = txtEstadoDestino.Text;
+                    pedido.NomeCliente = textBoxNomeCliente.Text;
+
+                    DataTable table = (DataTable) dataGridViewPedidos.DataSource;
+                    var chk = false;
+                    foreach (DataRow row in table.Rows)
                     {
-                        Brinde = Convert.ToBoolean(row["Brinde"]),
-                        CodigoProduto = row["Codigo do produto"].ToString(),
-                        NomeProduto = row["Nome do produto"].ToString(),
-                        ValorItemPedido = Convert.ToDouble(row["Valor"].ToString())
-                    });
+                        chk = row["Brinde"].ToString() != string.Empty ? true : false;
+
+                        pedido.ItensDoPedido.Add(
+                            new PedidoItem()
+                            {
+                                Brinde = chk,
+                                CodigoProduto = row["Codigo do produto"].ToString(),
+                                NomeProduto = row["Nome do produto"].ToString(),
+                                ValorItemPedido = Convert.ToDouble(row["Valor"].ToString())
+                            });
+                    }
+
+                    var notafiscal = nota.GerarNotaFiscal(pedido);
+
+                    if (gerador.Serializar(notafiscal,
+                        System.Configuration.ConfigurationManager.AppSettings["diretorioxml"]))
+                    {
+                        nota.Adicionar(notafiscal);
+                        LimparCampos();
+                        MensagemBox("Operação efetuada com sucesso");
+                    }
+                    else
+                        MensagemBox(
+                            "Não foi possivel realizar a persistência de dados, favor entrar em contato com o Administrador");
+
+                }
+                else
+                    MensagemBox("Ops! há algo errado, favor verificar");
             }
-
-            var notafiscal = nota.GerarNotaFiscal(pedido);
-
-
-            
-            if (gerador.Serializar(notafiscal, System.Configuration.ConfigurationManager.AppSettings["diretorioxml"]))
-            {
-                nota.Adicionar(notafiscal);
-                MessageBox.Show("Operação efetuada com sucesso");
-            }
-            else
-                MessageBox.Show("Não foi possivel realizar a persistência de dados, favor entrar em contato com o Administrador");
-         }
-
-        private void btnEditarNF_Click(object sender, EventArgs e)
-        {
-            FormEditarNotaFiscal editar = new FormEditarNotaFiscal();
-            editar.ShowDialog();
         }
 
         private void btnConsulta_Click(object sender, EventArgs e)
@@ -99,6 +100,20 @@ namespace TesteImposto.UI
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void LimparCampos()
+        {
+            txtEstadoOrigem.Text = "";
+            txtEstadoDestino.Text = "";
+            textBoxNomeCliente.Text = "";
+            dataGridViewPedidos.DataSource = GetTablePedidos();
+
+        }
+
+        private void MensagemBox(string msg)
+        {
+            MessageBox.Show(msg);
         }
     }
 }
