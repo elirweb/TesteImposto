@@ -92,7 +92,7 @@ namespace TesteImposto.UI
 
         private void btnConsulta_Click(object sender, EventArgs e)
         {
-            FormConsultaImposto imposto = new FormConsultaImposto();
+            FormConsultaImposto imposto = new FormConsultaImposto(Bootstrapper.container.GetInstance<INotaFiscalAppAction>());
             imposto.ShowDialog();
         }
 

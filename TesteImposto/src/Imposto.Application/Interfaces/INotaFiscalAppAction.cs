@@ -12,5 +12,6 @@ namespace Imposto.Application.Interfaces
         void Adicionar(NotaFiscal pedido);
 
         NotaFiscal GerarNotaFiscal(Pedido pedido);
+        IEnumerable<NotaFiscalItem> Imposto();
     }
 }

@@ -101,6 +101,9 @@
     <Content Include="xml\notafiscal.xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormConsultaImposto.resx">
+      <DependentUpon>FormConsultaImposto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormImposto.resx">
       <DependentUpon>FormImposto.cs</DependentUpon>
     </EmbeddedResource>

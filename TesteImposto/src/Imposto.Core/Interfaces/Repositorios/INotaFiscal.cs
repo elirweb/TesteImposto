@@ -10,5 +10,7 @@ namespace Imposto.Core.Interfaces.Repositorios
     public interface INotaFiscal
     {
         void Adicionar(NotaFiscal pedido);
+
+        IEnumerable<NotaFiscalItem> Imposto();
     }
 }

@@ -30,12 +30,23 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnClose = new System.Windows.Forms.Button();
+            this.CFOP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BaseICMS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorICMS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BaseIPI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorIPI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CFOP,
+            this.BaseICMS,
+            this.ValorICMS,
+            this.BaseIPI,
+            this.ValorIPI});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(586, 276);
@@ -50,6 +61,36 @@
             this.btnClose.Text = "Fechar";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // CFOP
+            // 
+            this.CFOP.DataPropertyName = "CFOP";
+            this.CFOP.HeaderText = "CFOP";
+            this.CFOP.Name = "CFOP";
+            // 
+            // BaseICMS
+            // 
+            this.BaseICMS.DataPropertyName = "BaseIcms";
+            this.BaseICMS.HeaderText = "Valor Total da Base de ICMS";
+            this.BaseICMS.Name = "BaseICMS";
+            // 
+            // ValorICMS
+            // 
+            this.ValorICMS.DataPropertyName = "ValorIcms";
+            this.ValorICMS.HeaderText = "Valor Total do ICMS";
+            this.ValorICMS.Name = "ValorICMS";
+            // 
+            // BaseIPI
+            // 
+            this.BaseIPI.DataPropertyName = "BaseIPI";
+            this.BaseIPI.HeaderText = "Valor Total da Base de IPI";
+            this.BaseIPI.Name = "BaseIPI";
+            // 
+            // ValorIPI
+            // 
+            this.ValorIPI.DataPropertyName = "ValorIPI";
+            this.ValorIPI.HeaderText = "Valor Total do IPI";
+            this.ValorIPI.Name = "ValorIPI";
             // 
             // FormConsultaImposto
             // 
@@ -69,5 +110,10 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CFOP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BaseICMS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValorICMS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BaseIPI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValorIPI;
     }
 }

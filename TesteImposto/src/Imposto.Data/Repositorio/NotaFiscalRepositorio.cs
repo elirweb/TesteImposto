@@ -34,6 +34,7 @@ namespace Imposto.Data.Repositorio
                 SalvarItems(pedido.ItensDaNotaFiscal);
             }
         }
+        
 
         public void SalvarItems(List<NotaFiscalItem> pedido)
         {
@@ -54,16 +55,21 @@ namespace Imposto.Data.Repositorio
                     p.Add("@pBaseIPI", itens.BaseIPI);
                     p.Add("@pValorIPI", itens.ValorIPI);
                     p.Add("@pDesconto", itens.desconto);
-
                     conn.Execute("P_NOTA_FISCAL_ITEM", p, commandType: CommandType.StoredProcedure);
-
 
                 }
 
             }
-        }
 
 
         }
+        public IEnumerable<NotaFiscalItem> Imposto()
+        {
+            var conn = new SqlConnection(bd);
+            var list = new List<NotaFiscalItem>();
+            return conn.Query<NotaFiscalItem>("P_IMPOSTO", commandTimeout: 8000).AsParallel();
+        }
+
+    }
     
 }

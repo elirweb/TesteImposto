@@ -28,5 +28,10 @@ namespace Imposto.Application.AppActions
             notaFiscal.EmitirNotaFiscal(pedido);
             return notaFiscal;
          }
+
+        public IEnumerable<NotaFiscalItem> Imposto()
+        {
+            return notafiscal.Imposto();
+        }
     }
 }
