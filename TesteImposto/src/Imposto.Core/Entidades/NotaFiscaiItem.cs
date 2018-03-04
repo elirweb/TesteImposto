@@ -24,5 +24,6 @@ namespace Imposto.Core.Entidades
         public string CodigoProduto { get; set; }
         // Tiver que remover a Classe do Desconto mas já volto aqui
         public double desconto { get; set; }
+
     }
 }

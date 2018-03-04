@@ -1,0 +1,123 @@
+﻿CREATE PROCEDURE P_IMPOSTO
+AS 
+SELECT isnull(Cfop,0) [CFOP],sum(BaseIcms) BaseIcms, sum(ValorIcms)ValorIcms , sum(isnull(BaseIPI,0)) BaseIPI, sum(isnull(ValorIPI,0)) ValorIPI FROM NotaFiscalItem
+GROUP BY Cfop
+=============================
+CREATE PROCEDURE dbo.P_NOTA_FISCAL 
+(
+	@pId int OUTPUT,
+	@pNumeroNotaFiscal int,
+	@pSerie int,
+	@pNomeCliente varchar(50),
+	@pEstadoDestino varchar(50),
+	@pEstadoOrigem varchar(50)
+)
+AS
+BEGIN
+	IF (@pId = 0)
+	BEGIN 
+		INSERT INTO [dbo].[NotaFiscal]
+       
+    ([NumeroNotaFiscal]
+           ,[Serie]
+           ,[NomeCliente]
+           ,[EstadoDestino]
+           ,[EstadoOrigem])
+		VALUES
+           (@pNumeroNotaFiscal
+           ,@pSerie
+           ,@pNomeCliente
+           ,@pEstadoDestino
+           ,@pE
+stadoOrigem)
+
+		SET @pId = @@IDENTITY
+	END
+	ELSE
+	BEGIN
+		UPDATE [dbo].[NotaFiscal]
+		SET [NumeroNotaFiscal] = @pNumeroNotaFiscal
+		  ,[Serie] = @pSerie
+		  ,[NomeCliente] = @pNomeCliente
+		  ,[EstadoDestino] = @pEstadoDestino
+		  ,[EstadoOrigem] = @pEsta
+doOrigem
+		WHERE Id = @pId
+	END	    
+END
+
+========================================
+CREATE PROCEDURE P_NOTA_FISCAL_ITEM
+(
+	@pId int,
+    @pIdNotaFiscal int,
+    @pCfop varchar(5),
+    @pTipoIcms varchar(20),
+    @pBaseIcms decimal(18,5),
+    @pAliquotaIcms decimal(18,5),
+    @pValorIcms decimal(18,5),
+    @pNomeProduto varchar(50),
+    @
+pCodigoProduto varchar(20),
+	@pBaseIPI decimal(18,5),
+	@pValorIPI decimal(18,5),
+	@pDesconto decimal (18,5)
+)
+AS
+BEGIN
+	IF (@pId = 0)
+	BEGIN 		
+		INSERT INTO [dbo].[NotaFiscalItem]
+           ([IdNotaFiscal]
+           ,[Cfop]
+           ,[TipoIcms]
+     
+      ,[BaseIcms]
+           ,[AliquotaIcms]
+           ,[ValorIcms]
+           ,
+
+[NomeProduto]
+           ,[CodigoProduto],
+		   [BaseIPI],
+		   [ValorIPI],
+		   [Desconto]
+		   )
+		VALUES
+           (@pIdNotaFiscal,
+			@pCfop,
+			@pTipoIcms,
+			@pBaseIcms,
+			@pAliquotaIcms,
+			@pValorIcms,
+			@pNomeProduto,
+			@pCodigoProduto,
+			@p
+BaseIPI,
+			@pValorIPI,
+			@pDesconto)
+
+		SET @pId = @@IDENTITY
+	END
+	ELSE
+	BEGIN
+		UPDATE [dbo].[No
+
+taFiscalItem]
+		SET [IdNotaFiscal] = @pIdNotaFiscal
+			,[Cfop] = @pCfop
+			,[TipoIcms] = @pTipoIcms
+			,[BaseIcms] = @pBaseIcms
+			,[AliquotaIcms] = @pAliquotaIcms
+			,[ValorIcms] = @pValorIcms
+			,[NomeProduto] = @pNomeProduto
+			,[CodigoProduto] = @pCod
+igoProduto,
+			[BaseIPI] = @pBaseIPI,
+			 [ValorIPI]= @pValorIPI,
+			 [Desconto] = @pDesconto  
+		 WHERE Id = @pId
+	END	    
+END
+
+

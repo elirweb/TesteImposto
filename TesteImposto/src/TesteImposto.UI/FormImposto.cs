@@ -57,11 +57,9 @@ namespace TesteImposto.UI
                     pedido.NomeCliente = textBoxNomeCliente.Text;
 
                     DataTable table = (DataTable) dataGridViewPedidos.DataSource;
-                    var chk = false;
                     foreach (DataRow row in table.Rows)
                     {
-                        chk = row["Brinde"].ToString() != string.Empty ? true : false;
-
+                       var chk = row["Brinde"].ToString() != string.Empty ? true : false;
                         pedido.ItensDoPedido.Add(
                             new PedidoItem()
                             {
@@ -93,7 +91,7 @@ namespace TesteImposto.UI
 
         private void btnConsulta_Click(object sender, EventArgs e)
         {
-            FormConsultaImposto imposto = new FormConsultaImposto(Bootstrapper.container.GetInstance<INotaFiscalAppAction>());
+            var imposto = new FormConsultaImposto(Bootstrapper.container.GetInstance<INotaFiscalAppAction>());
             imposto.ShowDialog();
         }
 
