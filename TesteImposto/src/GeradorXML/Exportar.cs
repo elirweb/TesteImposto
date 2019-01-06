@@ -20,6 +20,7 @@ namespace GeradorXML
                 XmlSerializer serializador = new XmlSerializer(typeof(NotaFiscal));
                 serializador.Serialize(stream, pedido);
                 return true;
+                //elirweb
             }
             catch (Exception g)
             {
